@@ -23,9 +23,9 @@ At [Snappet](http://www.snappet.org), we care about data and we care about code.
 
 # Questions
 
-* What approaches did you use when completing the test?  Do you use any CSS methodologies or techniques to help this approach?
-* If you had more time to spend on the test, what would you like to add to your solution?
-* What browsers should your test work in?  What will happen if we test it in older browsers like IE10/11?
+* What approaches did you use when completing the challenge?  Do you use any CSS methodologies or techniques to help this approach?
+* If you had more time to spend on the challenge, what would you like to add to your solution?
+* What browsers should your solution work in?  What will happen if we test it in older browsers?
 * What's your favourite programming language? Why?
 
 Thanks for your time, we look forward to hearing from you!
