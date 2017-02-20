@@ -28,4 +28,5 @@ At [Snappet](http://www.snappet.org), we care about data and we care about code.
 * What browsers should your solution work in?  What will happen if we test it in older browsers?
 * What's your favourite programming language? Why?
 
-Thanks for your time, we look forward to hearing from you!
+Thank you for your time, we look forward to hearing from you!  
+Thanks to the [JustEat Challenge](https://github.com/justeat/JustEat.Recruitment.UI) for providing inspiration.
