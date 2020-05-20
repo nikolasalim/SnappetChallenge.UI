@@ -14,7 +14,7 @@ At [Snappet](http://www.snappet.org), we care about data and we care about code.
 
 ## Important considerations
 
-* We work as much as possible with latest technolgies, such as flexboxes or svg fragment identifiers. Your minimal requirements are to make it work in IE11 and the latest version of Chrome, Firefox, Edge and Safari.
+* We work as much as possible with latest technolgies, such as flexboxes or svg fragment identifiers. Your minimal requirements are to make it work in the latest versions of Chrome, Firefox, Edge and Safari.
 * We don’t expect candidates to finish all of the styling detailed in the design (although you’ll get mega kudos if you manage to!).  Focus on making the parts that you do work on a good standard that reflects your ability.  We’d rather see a number of the components from the design styled well, than lots of incomplete components.
 * Think about how the CSS you write can be used across other pages on the site.  We build our CSS in a component-driven way so show us that you can do that too.
 * If you want to use a grid framework to help you out with the base layout, that’s completely fine.  Please don’t use a framework to do the majority of your styling though – we want to see an example of your own CSS, not that you can use a CSS framework.
