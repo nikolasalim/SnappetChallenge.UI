@@ -35,9 +35,34 @@ const subjectsMockUp = [
 
 function NavBar() {
   return (
-    <div>
-      <div className="left-side">
-        <div className="toggle-box">
+    <div
+      className="navbar-box"
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center",
+        flexDirection: "row",
+        width: "1500px",
+      }}
+    >
+      <div
+        className="left-side"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+        }}
+      >
+        <div
+          className="toggle-box"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
           <div
             className="balls-btn"
             style={{ backgroundColor: "grey", width: "50px" }}
@@ -55,7 +80,15 @@ function NavBar() {
         <DropdownMenu />
       </div>
 
-      <div className="right-side">
+      <div
+        className="right-side"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+        }}
+      >
         <div
           className="add-btn"
           style={{ backgroundColor: "lightBlue", width: "150px" }}
