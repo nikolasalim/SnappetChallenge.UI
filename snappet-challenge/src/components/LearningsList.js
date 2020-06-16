@@ -31,14 +31,69 @@ const subjectsMockUp = [
   },
 ];
 
+// NavBar component – holds the filters/functionality for the list of Learnings:
+
+function NavBar() {
+  return (
+    <div>
+      <div className="left-side">
+        <div className="toggle-box">
+          <div
+            className="balls-btn"
+            style={{ backgroundColor: "grey", width: "50px" }}
+          >
+            Balls
+          </div>
+          <div
+            className="user-btn"
+            style={{ backgroundColor: "lightGrey", width: "50px" }}
+          >
+            User
+          </div>
+          <div className="dropdownMenu"></div>
+        </div>
+        <DropdownMenu />
+      </div>
+
+      <div className="right-side">
+        <div
+          className="add-btn"
+          style={{ backgroundColor: "lightBlue", width: "150px" }}
+        >
+          Add learning objective
+        </div>
+        <div
+          className="update-btn"
+          style={{ backgroundColor: "red", width: "150px" }}
+        >
+          Automatic update
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// DropdownMenu component – responsible for switching between Subjects
+
+function DropdownMenu() {
+  return <div>Math Grade 5</div>;
+}
+
+// LearningsList component – displays each learning in a list:
+
 function LearningsList() {
-  return subjectsMockUp.map((subject) => (
-    <Learning
-      key={subject.id}
-      title={subject.title}
-      pupilsInfo={subject.pupils}
-    />
-  ));
+  return (
+    <div>
+      <NavBar />
+      {subjectsMockUp.map((subject) => (
+        <Learning
+          key={subject.id}
+          title={subject.title}
+          pupilsInfo={subject.pupils}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default LearningsList;
