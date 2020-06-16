@@ -9,9 +9,9 @@ function Learning(props) {
     const presentPupil = (
       <div
         style={{
-          height: "20px",
-          width: "20px",
-          margin: "5px",
+          height: "10px",
+          width: "10px",
+          margin: "2px",
           backgroundColor: "blue",
         }}
       ></div>
@@ -20,9 +20,9 @@ function Learning(props) {
     const absentPupil = (
       <div
         style={{
-          height: "20px",
-          width: "20px",
-          margin: "5px",
+          height: "10px",
+          width: "10px",
+          margin: "2px",
           backgroundColor: "yellow",
         }}
       ></div>
@@ -31,9 +31,9 @@ function Learning(props) {
     const defaultPupil = (
       <div
         style={{
-          height: "20px",
-          width: "20px",
-          margin: "5px",
+          height: "10px",
+          width: "10px",
+          margin: "2px",
           backgroundColor: "LightBlue",
         }}
       ></div>
@@ -57,16 +57,41 @@ function Learning(props) {
     }
   }
 
+  const { present, absent, total } = props.pupilsInfo;
+
   return (
-    <div>
-      <h1 className="title">{props.title}</h1>
-      <div className="pupils-box">
-        {countingPupils(props.present, props.absent, props.total)}
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+        width: "1500px",
+      }}
+    >
+      <p className="title" style={{ width: "200px" }}>
+        {props.title}
+      </p>
+      <div
+        className="pupils-box"
+        style={{
+          width: "700px",
+          height: "30px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "row",
+        }}
+      >
+        {/* Running the function that counts pupils and then printing them: */}
+        {countingPupils(present, absent, total)}
         {totalPupils.map((pupil, i) => {
-          return <div key={i}> {pupil} </div>;
+          return <div key={i}>{pupil}</div>;
         })}
       </div>
-      <div className="show-details-btn">Show details</div>
+      <div className="show-details-btn" style={{ width: "200px" }}>
+        Show details
+      </div>
     </div>
   );
 }
