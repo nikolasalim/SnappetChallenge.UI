@@ -1,6 +1,6 @@
 @import "../../scss/base";
 
-.body {
+.header-body {
   @include flexCenter(column);
   background-color: $primary-color;
   font-family: $primary-font;
@@ -18,6 +18,10 @@
       .link {
         text-decoration: none;
         color: $secondary-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     .title {

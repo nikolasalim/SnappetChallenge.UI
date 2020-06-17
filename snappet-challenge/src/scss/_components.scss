@@ -1,0 +1,19 @@
+// Buttons
+
+@mixin default-btn {
+  @include flexCenter("");
+  @include colorPositive;
+
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid grey;
+
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    @include colorNegative;
+  }
+}

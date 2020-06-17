@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,qFAAI;AAIZ,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;ADLD,AAAA,oBAAoB,CAAC;ECwCnB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,ED1CM,MAAM;EAC1B,MAAM,EAAE,IAAI;CACb",
     "sources": [
-        "LearningsList.scss"
+        "LearningsList.scss",
+        "../../scss/_base.scss"
     ],
     "names": [],
     "file": "LearningsList.css"

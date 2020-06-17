@@ -1,0 +1,6 @@
+@import "../../scss/base";
+
+.learnings-list-body {
+  @include flexCenter(column);
+  height: 70vh;
+}

@@ -1,1 +1,149 @@
-/* No CSS *//*# sourceMappingURL=Learning.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.learning-body {
+  width: 85vw;
+}
+
+.learning-body .learning-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learning-body .learning-box .title,
+.learning-body .learning-box .pupils-box {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.learning-body .learning-box .title {
+  color: #252525;
+}
+
+.learning-body .learning-box .pupils-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 28%;
+}
+
+.learning-body .learning-box .pupils-box .present-pupil,
+.learning-body .learning-box .pupils-box .absent-pupil,
+.learning-body .learning-box .pupils-box .default-pupil {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.learning-body .learning-box .pupils-box .present-pupil {
+  background-color: #28a8e4;
+}
+
+.learning-body .learning-box .pupils-box .absent-pupil {
+  background-color: #ffdb39;
+}
+
+.learning-body .learning-box .pupils-box .default-pupil {
+  background-color: lightblue;
+}
+
+.learning-body .learning-box .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+}
+
+.learning-body .learning-box .btn-box .show-details-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  background-color: white;
+  color: #28a8e4;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+}
+
+.learning-body .learning-box .btn-box .show-details-btn:hover {
+  background-color: #28a8e4;
+  color: white;
+}
+
+.learning-body .divider {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 0;
+  border-top: 0.5px solid #d1d1d1;
+}
+/*# sourceMappingURL=Learning.css.map */

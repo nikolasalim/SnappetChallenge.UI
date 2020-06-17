@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.body {
+.header-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@
   height: 25vh;
 }
 
-.body .top-box {
+.header-body .top-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,17 +42,21 @@
   margin-bottom: 4vh;
 }
 
-.body .top-box .navigation {
+.header-body .top-box .navigation {
   font-size: 15px;
   font-weight: 600;
 }
 
-.body .top-box .navigation .link {
+.header-body .top-box .navigation .link {
   text-decoration: none;
   color: white;
 }
 
-.body .top-box .title {
+.header-body .top-box .navigation .link:hover {
+  text-decoration: underline;
+}
+
+.header-body .top-box .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,14 +75,14 @@
   height: 50px;
 }
 
-.body .top-box .title .gift-icon {
+.header-body .top-box .title .gift-icon {
   width: 40px;
   height: 40px;
   fill: white;
   padding-right: 8px;
 }
 
-.body .bottom-box {
+.header-body .bottom-box {
   background-color: lightgrey;
 }
 /*# sourceMappingURL=Header.css.map */

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Learning from "../Learning";
 import subjectsMockUp from "../../assets/subjectsMockUp";
 
+import "./LearningsList.scss";
+
 // LearningsList component – displays each learning in a list:
 
 function LearningsList() {
@@ -15,7 +17,7 @@ function LearningsList() {
   }
 
   return (
-    <div>
+    <div className="learnings-list-body">
       <NavBar subjects={subjects} onChangeHandler={onChangeHandler}></NavBar>
 
       <div
