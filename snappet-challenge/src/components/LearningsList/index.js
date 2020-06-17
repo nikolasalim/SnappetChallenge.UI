@@ -9,7 +9,7 @@ import { ReactComponent as RefreshIcon } from "../../assets/icons/refresh.svg";
 import { ReactComponent as BallsIcon } from "../../assets/icons/balls.svg";
 import { ReactComponent as UserIcon } from "../../assets/icons/person.svg";
 
-// LearningsList component – displays each learning in a list:
+// LearningsList component – displays each Learning in a list:
 
 function LearningsList() {
   const [subjects, setSubjects] = useState(subjectsMockUp);
@@ -55,8 +55,6 @@ function LearningsList() {
 // NavBar component – holds the filters/functionality for the list of Learnings:
 
 function NavBar(props) {
-  // const [currentSubject, setCurrentSubject] = useState(props.subjects[0].title);
-
   return (
     <div className="navbar-box">
       <div className="left-box">

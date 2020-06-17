@@ -174,8 +174,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 90%;
-    margin: 10px 0px;
+    width: 100%;
+    margin: 7px 0px;
   }
 }
 
@@ -269,6 +269,21 @@
   height: 40px;
   fill: white;
   padding-right: 8px;
+}
+
+@media only screen and (max-width: 544px) {
+  .header-body .top-box {
+    height: 18vh;
+  }
+  .header-body .top-box .title {
+    font-size: 28px;
+    height: 40px;
+  }
+  .header-body .top-box .title .gift-icon {
+    width: 28px;
+    height: 28px;
+    padding-right: 3px;
+  }
 }
 
 .header-body .bottom-box {
