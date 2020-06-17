@@ -1,6 +1,119 @@
 @import "../../scss/base";
+@import "../../scss/components";
 
 .learnings-list-body {
-  @include flexCenter(column);
-  height: 70vh;
+  @include paper-card;
+
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: $primary-font;
+
+  .navbar-box {
+    @include flexCenter(row);
+    justify-content: space-between;
+    width: 80vw;
+    margin: 40px 0;
+
+    .left-box,
+    .right-box {
+      @include flexCenter(row);
+    }
+
+    .left-box {
+      .toggle-box {
+        @include flexCenter(row);
+
+        .balls-btn {
+          @include toggle-left;
+
+          .balls-icon {
+            width: 40px;
+            height: 40px;
+            fill: $tertiary-color;
+          }
+        }
+
+        .user-btn {
+          @include toggle-right;
+
+          .user-icon {
+            width: 30px;
+            height: 30px;
+            fill: $tertiary-color;
+          }
+        }
+      }
+
+      select {
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='15' width='15' id='4277e692-56ed-4859-b091-d691c1a257d8' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><title>Down</title><path d='M27.78,9.51a2,2,0,0,0-2.85,0L16,18.45l-8.86-9a2,2,0,0,0-2.85,0,2,2,0,0,0,0,2.85L14.61,22.58a2,2,0,0,0,2.85,0L27.78,12.26a2,2,0,0,0,0-2.75Z'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 50%;
+      }
+
+      .dropdown-menu {
+        @include default-dropdown;
+        margin-left: 10px;
+      }
+    }
+
+    .right-box {
+      .add-btn {
+        @include blue-btn;
+        .plus-icon {
+          @include flexCenter(row);
+          width: 20px;
+          height: 20px;
+          fill: $secondary-color;
+          margin-left: 5px;
+        }
+      }
+      .update-btn {
+        @include red-btn;
+        margin-left: 10px;
+        .refresh-icon {
+          @include flexCenter(row);
+          width: 20px;
+          height: 20px;
+          fill: $secondary-color;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .table-titles {
+    @include flexCenter(row);
+    justify-content: space-between;
+    width: 80vw;
+    margin-bottom: 10px;
+
+    font-weight: $semibold;
+    font-size: 15px;
+
+    .learning-title {
+      @include flexCenter(row);
+      justify-content: flex-start;
+      width: 30%;
+
+      .down-icon {
+        width: 15px;
+        height: 15px;
+        fill: $tertiary-color;
+        margin-left: 5px;
+      }
+    }
+    .pupils-title {
+      width: 28%;
+    }
+    .whitespace-title {
+      width: 15%;
+      height: 10px;
+    }
+  }
 }

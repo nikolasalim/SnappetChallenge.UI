@@ -1,10 +1,13 @@
-// Buttons
+////////// Buttons //////////
+
+// Default btn:
 
 @mixin default-btn {
   @include flexCenter("");
-  @include colorPositive;
+  @include bluePositive;
 
   width: fit-content;
+  height: 20px;
   padding: 15px;
   border: 1px solid grey;
 
@@ -14,6 +17,126 @@
   cursor: pointer;
 
   &:hover {
-    @include colorNegative;
+    @include blueNegative;
   }
+}
+
+// Blue btn:
+
+@mixin blue-btn {
+  @include flexCenter("");
+  @include blueNegative;
+
+  width: fit-content;
+  height: 20px;
+  padding: 15px;
+  border: 1px solid darken($primary-color, 10%);
+
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+}
+
+// Red btn:
+
+@mixin red-btn {
+  @include flexCenter("");
+  @include redPositive;
+
+  width: fit-content;
+  height: 20px;
+  padding: 15px;
+  border: 1px solid darken($quaternary-color, 10%);
+
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($quaternary-color, 10%);
+  }
+}
+
+// Toggle left:
+
+@mixin toggle-left {
+  @include flexCenter("");
+  @include bluePositive;
+
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid grey;
+
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+// Toggle right:
+
+@mixin toggle-right {
+  @include flexCenter("");
+  @include bluePositive;
+
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid grey;
+
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+// Default dropdown
+
+@mixin default-dropdown {
+  @include flexCenter("");
+
+  color: $tertiary-color;
+  background-color: $secondary-color;
+
+  font-family: $primary-font;
+  font-weight: $semibold;
+  font-size: 15px;
+
+  width: fit-content;
+  height: 57px;
+  padding: 10px 50px 10px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px #a5a5a5;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+////////// Cards //////////
+
+@mixin paper-card {
+  @include flexCenter(column);
+  width: 85vw;
+  background-color: $secondary-color;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px #a5a5a5;
 }

@@ -2,15 +2,20 @@
 
 .header-body {
   @include flexCenter(column);
-  background-color: $primary-color;
+
+  position: relative;
+  z-index: 0;
+
   font-family: $primary-font;
-  height: 25vh;
 
   .top-box {
     @include flexCenter(column);
-    @include colorNegative;
+    @include blueNegative;
 
-    margin-bottom: 4vh;
+    height: 25vh;
+    width: 100vw;
+    background-color: $primary-color;
+    // margin-bottom: 4vh;
 
     .navigation {
       font-size: 15px;
@@ -39,6 +44,8 @@
   }
 
   .bottom-box {
-    background-color: lightgrey;
+    background-color: whitesmoke;
+    height: 75vh;
+    width: 100vw;
   }
 }

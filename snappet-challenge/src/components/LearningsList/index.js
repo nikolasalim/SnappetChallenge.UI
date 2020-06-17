@@ -3,6 +3,11 @@ import Learning from "../Learning";
 import subjectsMockUp from "../../assets/subjectsMockUp";
 
 import "./LearningsList.scss";
+import { ReactComponent as DownIcon } from "../../assets/icons/down.svg";
+import { ReactComponent as PlusIcon } from "../../assets/icons/plus.svg";
+import { ReactComponent as RefreshIcon } from "../../assets/icons/refresh.svg";
+import { ReactComponent as BallsIcon } from "../../assets/icons/balls.svg";
+import { ReactComponent as UserIcon } from "../../assets/icons/person.svg";
 
 // LearningsList component – displays each learning in a list:
 
@@ -20,18 +25,15 @@ function LearningsList() {
     <div className="learnings-list-body">
       <NavBar subjects={subjects} onChangeHandler={onChangeHandler}></NavBar>
 
-      <div
-        className="table-titles"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "row",
-          width: "1500px",
-        }}
-      >
-        <p>Learning Objective</p>
-        <p>Pupils</p>
+      <div className="table-titles">
+        <div className="learning-title">
+          <p>Learning Objective</p>
+          <a href="#">
+            <DownIcon className="down-icon" />
+          </a>
+        </div>
+        <p className="pupils-title">Pupils</p>
+        <span className="whitespace-title"></span>
       </div>
       {subjectsMockUp.map((subject) => {
         if (subject.title === currentSubject) {
@@ -56,45 +58,14 @@ function NavBar(props) {
   // const [currentSubject, setCurrentSubject] = useState(props.subjects[0].title);
 
   return (
-    <div
-      className="navbar-box"
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-        flexDirection: "row",
-        width: "1500px",
-      }}
-    >
-      <div
-        className="left-side"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          className="toggle-box"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
-          }}
-        >
-          <div
-            className="balls-btn"
-            style={{ backgroundColor: "grey", width: "50px" }}
-          >
-            Balls
+    <div className="navbar-box">
+      <div className="left-box">
+        <div className="toggle-box">
+          <div className="balls-btn">
+            <BallsIcon className="balls-icon" />
           </div>
-          <div
-            className="user-btn"
-            style={{ backgroundColor: "lightGrey", width: "50px" }}
-          >
-            User
+          <div className="user-btn">
+            <UserIcon className="user-icon" />
           </div>
         </div>
 
@@ -113,26 +84,14 @@ function NavBar(props) {
         </select>
       </div>
 
-      <div
-        className="right-side"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          className="add-btn"
-          style={{ backgroundColor: "lightBlue", width: "150px" }}
-        >
-          Add learning objective
+      <div className="right-box">
+        <div className="add-btn">
+          <p>Add learning objective</p>
+          <PlusIcon className="plus-icon" />
         </div>
-        <div
-          className="update-btn"
-          style={{ backgroundColor: "red", width: "150px" }}
-        >
-          Automatic update
+        <div className="update-btn">
+          <p>Automatic update</p>
+          <RefreshIcon className="refresh-icon" />
         </div>
       </div>
     </div>

@@ -18,6 +18,351 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70vh;
+  width: 85vw;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 5px 0px #a5a5a5;
+          box-shadow: 0px 0px 5px 0px #a5a5a5;
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Raleway";
+}
+
+.learnings-list-body .navbar-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vw;
+  margin: 40px 0;
+}
+
+.learnings-list-body .navbar-box .left-box,
+.learnings-list-body .navbar-box .right-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .balls-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  background-color: white;
+  color: #28a8e4;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .balls-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .balls-btn .balls-icon {
+  width: 40px;
+  height: 40px;
+  fill: #252525;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .user-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  background-color: white;
+  color: #28a8e4;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .user-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.learnings-list-body .navbar-box .left-box .toggle-box .user-btn .user-icon {
+  width: 30px;
+  height: 30px;
+  fill: #252525;
+}
+
+.learnings-list-body .navbar-box .left-box select {
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='15' width='15' id='4277e692-56ed-4859-b091-d691c1a257d8' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><title>Down</title><path d='M27.78,9.51a2,2,0,0,0-2.85,0L16,18.45l-8.86-9a2,2,0,0,0-2.85,0,2,2,0,0,0,0,2.85L14.61,22.58a2,2,0,0,0,2.85,0L27.78,12.26a2,2,0,0,0,0-2.75Z'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+}
+
+.learnings-list-body .navbar-box .left-box .dropdown-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  color: #252525;
+  background-color: white;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 57px;
+  padding: 10px 50px 10px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.learnings-list-body .navbar-box .left-box .dropdown-menu:hover {
+  background-color: #e6e6e6;
+}
+
+.learnings-list-body .navbar-box .right-box .add-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  background-color: #28a8e4;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  padding: 15px;
+  border: 1px solid #188bc1;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+}
+
+.learnings-list-body .navbar-box .right-box .add-btn:hover {
+  background-color: #55baea;
+}
+
+.learnings-list-body .navbar-box .right-box .add-btn .plus-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: 5px;
+}
+
+.learnings-list-body .navbar-box .right-box .update-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  background-color: #c20b51;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  padding: 15px;
+  border: 1px solid #92083d;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px #a5a5a5;
+          box-shadow: 0px 1px 2px 0px #a5a5a5;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.learnings-list-body .navbar-box .right-box .update-btn:hover {
+  background-color: #f10f65;
+}
+
+.learnings-list-body .navbar-box .right-box .update-btn .refresh-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: 5px;
+}
+
+.learnings-list-body .table-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80vw;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.learnings-list-body .table-titles .learning-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 30%;
+}
+
+.learnings-list-body .table-titles .learning-title .down-icon {
+  width: 15px;
+  height: 15px;
+  fill: #252525;
+  margin-left: 5px;
+}
+
+.learnings-list-body .table-titles .pupils-title {
+  width: 28%;
+}
+
+.learnings-list-body .table-titles .whitespace-title {
+  width: 15%;
+  height: 10px;
 }
 /*# sourceMappingURL=LearningsList.css.map */

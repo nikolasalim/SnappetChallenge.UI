@@ -97,24 +97,6 @@ const subjectsMockUp = [
           total: 40,
         },
       },
-      {
-        id: 3,
-        title: "011. Learning Objective number eleven",
-        pupils: {
-          present: 13,
-          absent: 4,
-          total: 40,
-        },
-      },
-      {
-        id: 3,
-        title: "012. Learning Objective number twelve",
-        pupils: {
-          present: 20,
-          absent: 4,
-          total: 40,
-        },
-      },
     ],
   },
 ];

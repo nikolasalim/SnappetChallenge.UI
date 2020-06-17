@@ -35,6 +35,8 @@ function Learning(props) {
 
   return (
     <div className="learning-body">
+      <hr className="divider"></hr>
+
       <div className="learning-box">
         <p className="title">{props.title}</p>
         <div className="pupils-box">
@@ -48,7 +50,6 @@ function Learning(props) {
           <div className="show-details-btn">Show details</div>
         </div>
       </div>
-      <hr className="divider"></hr>
     </div>
   );
 }

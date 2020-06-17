@@ -14,6 +14,7 @@
 $primary-color: rgb(40, 168, 228);
 $secondary-color: white;
 $tertiary-color: rgb(37, 37, 37);
+$quaternary-color: rgb(194, 11, 81);
 
 // Fonts
 
@@ -27,14 +28,24 @@ $bold: 700;
 
 // Color scheme
 
-@mixin colorNegative() {
+@mixin blueNegative() {
   background-color: $primary-color;
   color: $secondary-color;
 }
 
-@mixin colorPositive() {
+@mixin bluePositive() {
   background-color: $secondary-color;
   color: $primary-color;
+}
+
+@mixin redNegative() {
+  background-color: $secondary-color;
+  color: $quaternary-color;
+}
+
+@mixin redPositive() {
+  background-color: $quaternary-color;
+  color: $secondary-color;
 }
 
 // Align

@@ -18,9 +18,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #28a8e4;
+  position: relative;
+  z-index: 0;
   font-family: "Raleway";
-  height: 25vh;
 }
 
 .header-body .top-box {
@@ -39,7 +39,9 @@
           flex-direction: column;
   background-color: #28a8e4;
   color: white;
-  margin-bottom: 4vh;
+  height: 25vh;
+  width: 100vw;
+  background-color: #28a8e4;
 }
 
 .header-body .top-box .navigation {
@@ -83,6 +85,8 @@
 }
 
 .header-body .bottom-box {
-  background-color: lightgrey;
+  background-color: whitesmoke;
+  height: 75vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=Header.css.map */

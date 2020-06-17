@@ -2,29 +2,31 @@
 @import "../../scss/components";
 
 .learning-body {
-  width: 85vw;
+  width: 80vw;
 
   .learning-box {
     @include flexCenter(row);
+    // justify-content: unset;
+    justify-content: space-between;
 
     font-family: $primary-font;
     font-weight: $semibold;
     font-size: 15px;
-    justify-content: space-between;
 
     .title,
     .pupils-box {
-      margin: 30px 0;
-      @include flexCenter(row);
+      margin: 30px 0px;
+      // @include flexCenter(row);
       flex-wrap: wrap;
     }
 
     .title {
       color: $tertiary-color;
+      width: 30%;
     }
     .pupils-box {
       @include flexCenter(row);
-      width: 28%;
+      width: 30%;
 
       .present-pupil,
       .absent-pupil,
@@ -49,6 +51,8 @@
     }
     .btn-box {
       @include flexCenter("");
+      justify-content: flex-end;
+      width: 15%;
       .show-details-btn {
         @include default-btn;
       }
