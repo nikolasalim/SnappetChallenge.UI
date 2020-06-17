@@ -3,6 +3,8 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import LearningsList from "./components/LearningsList";
 
+import "./scss/main.scss";
+
 function App() {
   return (
     <div className="App">

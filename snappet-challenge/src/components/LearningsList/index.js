@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Learning from "./Learning";
-import subjectsMockUp from "../assets/subjectsMockUp";
+import Learning from "../Learning";
+import subjectsMockUp from "../../assets/subjectsMockUp";
 
 // LearningsList component – displays each learning in a list:
 
