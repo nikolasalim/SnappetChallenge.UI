@@ -14,11 +14,23 @@ function LearningsList() {
     setCurrentSubject(event.target.value);
   }
 
-  // NavBar component – holds the filters/functionality for the list of Learnings:
-
   return (
     <div>
       <NavBar subjects={subjects} onChangeHandler={onChangeHandler}></NavBar>
+
+      <div
+        className="table-titles"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+          width: "1500px",
+        }}
+      >
+        <p>Learning Objective</p>
+        <p>Pupils</p>
+      </div>
       {subjectsMockUp.map((subject) => {
         if (subject.title === currentSubject) {
           return subject.learningObjectives.map((learning) => {
@@ -35,6 +47,8 @@ function LearningsList() {
     </div>
   );
 }
+
+// NavBar component – holds the filters/functionality for the list of Learnings:
 
 function NavBar(props) {
   // const [currentSubject, setCurrentSubject] = useState(props.subjects[0].title);

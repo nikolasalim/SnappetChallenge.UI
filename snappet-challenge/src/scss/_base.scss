@@ -1,6 +1,47 @@
-// Reset:
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+////////// Reset //////////
 
 * {
   padding: 0;
   margin: 0;
+}
+
+////////// Variables //////////
+
+// Colors
+
+$primary-color: rgb(51, 169, 248);
+$secondary-color: white;
+$tertiary-color: rgb(27, 27, 27);
+
+// Fonts
+
+$primary-font: "Raleway";
+
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+////////// Mixins //////////
+
+// Color scheme
+
+@mixin colorPositive() {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+@mixin colorNegative() {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+// Align
+
+@mixin flexCenter($flex-direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $flex-direction;
 }
