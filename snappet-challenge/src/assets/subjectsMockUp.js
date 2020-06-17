@@ -66,6 +66,57 @@ const subjectsMockUp = [
       },
     ],
   },
+  {
+    id: 3,
+    title: "English Grade 1",
+    learningObjectives: [
+      {
+        id: 1,
+        title: "007. Learning Objective number seven",
+        pupils: {
+          present: 30,
+          absent: 2,
+          total: 40,
+        },
+      },
+      {
+        id: 2,
+        title: "008. Learning Objective number eight",
+        pupils: {
+          present: 7,
+          absent: 7,
+          total: 40,
+        },
+      },
+      {
+        id: 3,
+        title: "010. Learning Objective number ten",
+        pupils: {
+          present: 9,
+          absent: 0,
+          total: 40,
+        },
+      },
+      {
+        id: 3,
+        title: "011. Learning Objective number eleven",
+        pupils: {
+          present: 13,
+          absent: 4,
+          total: 40,
+        },
+      },
+      {
+        id: 3,
+        title: "012. Learning Objective number twelve",
+        pupils: {
+          present: 20,
+          absent: 4,
+          total: 40,
+        },
+      },
+    ],
+  },
 ];
 
 export default subjectsMockUp;

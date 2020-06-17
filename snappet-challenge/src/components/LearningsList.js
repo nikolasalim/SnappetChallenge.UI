@@ -37,7 +37,7 @@ function LearningsList() {
 }
 
 function NavBar(props) {
-  const [currentSubject, setCurrentSubject] = useState(props.subjects[0].title);
+  // const [currentSubject, setCurrentSubject] = useState(props.subjects[0].title);
 
   return (
     <div
@@ -80,7 +80,6 @@ function NavBar(props) {
           >
             User
           </div>
-          <div className="dropdownMenu"></div>
         </div>
 
         <select
@@ -125,20 +124,3 @@ function NavBar(props) {
 }
 
 export default LearningsList;
-
-/* 
-// DropdownMenu component – responsible for switching between Subjectss
-
-function DropdownMenu(props) {
-  return <div>this is the dropdown menu</div>;
-} */
-
-// const [open, setOpen] = useState(false);
-
-// <a href="#" onClick={() => setOpen(!open)}>
-//   Math Grade 5
-// </a>;
-
-// {
-//   open && props.children;
-// }
