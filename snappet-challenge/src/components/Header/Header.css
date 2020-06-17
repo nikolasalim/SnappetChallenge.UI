@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #28a8e4;
+  font-family: "Raleway";
+  height: 25vh;
+}
+
+.body .top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #28a8e4;
+  color: white;
+  margin-bottom: 4vh;
+}
+
+.body .top-box .navigation {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.body .top-box .navigation .link {
+  text-decoration: none;
+  color: white;
+}
+
+.body .top-box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 40px;
+  font-weight: 700;
+  height: 50px;
+}
+
+.body .top-box .title .gift-icon {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  padding-right: 8px;
+}
+
+.body .bottom-box {
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=Header.css.map */

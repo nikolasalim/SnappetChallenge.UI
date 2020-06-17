@@ -11,7 +11,7 @@
 
 // Colors
 
-$primary-color: rgb(51, 169, 248);
+$primary-color: rgb(40, 168, 228);
 $secondary-color: white;
 $tertiary-color: rgb(27, 27, 27);
 
@@ -27,12 +27,12 @@ $bold: 700;
 
 // Color scheme
 
-@mixin colorPositive() {
+@mixin colorNegative() {
   background-color: $primary-color;
   color: $secondary-color;
 }
 
-@mixin colorNegative() {
+@mixin colorPositive() {
   background-color: $secondary-color;
   color: $primary-color;
 }

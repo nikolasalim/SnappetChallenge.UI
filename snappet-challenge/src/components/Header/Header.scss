@@ -1,0 +1,40 @@
+@import "../../scss/base";
+
+.body {
+  @include flexCenter(column);
+  background-color: $primary-color;
+  font-family: $primary-font;
+  height: 25vh;
+
+  .top-box {
+    @include flexCenter(column);
+    @include colorNegative;
+
+    margin-bottom: 4vh;
+
+    .navigation {
+      font-size: 15px;
+      font-weight: $semibold;
+      .link {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+    .title {
+      @include flexCenter(row);
+      font-size: 40px;
+      font-weight: $bold;
+      height: 50px;
+      .gift-icon {
+        width: 40px;
+        height: 40px;
+        fill: $secondary-color;
+        padding-right: 8px;
+      }
+    }
+  }
+
+  .bottom-box {
+    background-color: lightgrey;
+  }
+}
