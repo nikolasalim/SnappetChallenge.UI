@@ -84,6 +84,21 @@
   padding-right: 8px;
 }
 
+@media only screen and (max-width: 544px) {
+  .header-body .top-box {
+    height: 18vh;
+  }
+  .header-body .top-box .title {
+    font-size: 28px;
+    height: 40px;
+  }
+  .header-body .top-box .title .gift-icon {
+    width: 28px;
+    height: 28px;
+    padding-right: 3px;
+  }
+}
+
 .header-body .bottom-box {
   background-color: whitesmoke;
   height: 75vh;

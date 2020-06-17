@@ -19,6 +19,15 @@
   &:hover {
     @include blueNegative;
   }
+
+  // default-btn media query //
+
+  @include responsive(mobile) {
+    @include flexCenter(column);
+    height: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
 }
 
 // Blue btn:
@@ -28,7 +37,7 @@
   @include blueNegative;
 
   width: fit-content;
-  height: 20px;
+  height: 25px;
   padding: 15px;
   border: 1px solid darken($primary-color, 10%);
 
@@ -40,6 +49,14 @@
   &:hover {
     background-color: lighten($primary-color, 10%);
   }
+
+  // blue-btn media query //
+
+  @include responsive(mobile) {
+    margin: 5px 0;
+    height: 10px;
+    width: 100%;
+  }
 }
 
 // Red btn:
@@ -49,7 +66,7 @@
   @include redPositive;
 
   width: fit-content;
-  height: 20px;
+  height: 25px;
   padding: 15px;
   border: 1px solid darken($quaternary-color, 10%);
 
@@ -60,6 +77,15 @@
 
   &:hover {
     background-color: lighten($quaternary-color, 10%);
+  }
+
+  // red-btn media query //
+
+  @include responsive(mobile) {
+    @include flexCenter(column);
+    margin: 5px 0;
+    height: 10px;
+    width: 100%;
   }
 }
 
@@ -82,6 +108,12 @@
   &:hover {
     background-color: darken($secondary-color, 10%);
   }
+
+  // toggle-left media query //
+
+  @include responsive(mobile) {
+    height: 20px;
+  }
 }
 
 // Toggle right:
@@ -102,6 +134,11 @@
 
   &:hover {
     background-color: darken($secondary-color, 10%);
+  }
+  // toggle-right media query //
+
+  @include responsive(mobile) {
+    height: 20px;
   }
 }
 
@@ -128,6 +165,12 @@
 
   &:hover {
     background-color: darken($secondary-color, 10%);
+  }
+
+  // default-dropdown media query //
+
+  @include responsive(mobile) {
+    height: 42px;
   }
 }
 

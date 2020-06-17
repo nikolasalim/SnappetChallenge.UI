@@ -1,12 +1,12 @@
 @import "../../scss/base";
 @import "../../scss/components";
+@import "../../scss/mediaQueries";
 
 .learning-body {
   width: 80vw;
 
   .learning-box {
     @include flexCenter(row);
-    // justify-content: unset;
     justify-content: space-between;
 
     font-family: $primary-font;
@@ -16,8 +16,6 @@
     .title,
     .pupils-box {
       margin: 30px 0px;
-      // @include flexCenter(row);
-      flex-wrap: wrap;
     }
 
     .title {
@@ -27,6 +25,7 @@
     .pupils-box {
       @include flexCenter(row);
       width: 30%;
+      flex-wrap: wrap;
 
       .present-pupil,
       .absent-pupil,
@@ -55,6 +54,17 @@
       width: 15%;
       .show-details-btn {
         @include default-btn;
+      }
+    }
+    // learning-box media query //
+    @include responsive(mobile) {
+      flex-direction: column;
+      .title,
+      .pupils-box,
+      .btn-box {
+        justify-content: center;
+        width: 100%;
+        margin: 7px 0px;
       }
     }
   }

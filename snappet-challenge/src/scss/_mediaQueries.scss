@@ -1,0 +1,21 @@
+// e 1280 (desktop), 786 (tablet) and 544 (mobile).
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 544px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 786px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
